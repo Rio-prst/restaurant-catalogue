@@ -1,13 +1,14 @@
 import RestaurantItem from "./RestaurantItem";
 import PropTypes from "prop-types";
+import Grid from "./styled/Grid";
 
 function RestaurantList({ restaurants }) {
   return (
-    <div className="grid">
+    <Grid gap='1rem'>
       {restaurants.map((restaurant) => (
         <RestaurantItem key={restaurant.id} {...restaurant}/>
       ))}
-    </div>
+    </Grid>
   );
 }
 

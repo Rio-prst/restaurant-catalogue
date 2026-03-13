@@ -1,12 +1,13 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import RestaurantList from '../components/RestaurantList';
+import Container from '../components/styled/Container';
 
 export default function Home({ restaurants }) {
   return (
-    <div className='container'>
+    <Container maxWidth='80%'>
       <RestaurantList restaurants={restaurants}/>
-    </div>
+    </Container>
   )
 }
 
